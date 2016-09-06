@@ -1,24 +1,94 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mrwdw.GitHub.io by Mrwdw</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Mrwdw.GitHub.io</h1>
+      <h2 class="project-tagline">王的博客</h2>
+    </section>
 
-<div class="header-bar">
-  <h1>*folio</h1>
-  <h2>simple whitespace theme</h2>
-  <br/>
-  <hr>
-  <br/>
-</div>
+    <section class="main-content">
+      <h1>
+<a id="folio" class="anchor" href="#folio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>*folio</h1>
 
+<p>A simple theme for showcasing your work, emphasis on whitespace, transparency, and helvetica. </p>
 
-<ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
-        <p>{{ post.description }}</p>
-        <br/>
-        <hr/>
-      </li>
-    {% endfor %}
-</ul>
+<p><a href="http://liabogoev.com/-folio">Live Demo</a></p>
+
+<hr>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+
+<h3>
+<a id="collections" class="anchor" href="#collections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collections</h3>
+
+<p>This Jekyll theme implements collections to let you break up your work into categories. The example is divided into poetry and portfolio, but easily revamp this into recipes, apps, short stories, limmericks, whatever your creative work is. </p>
+
+<blockquote>
+<p>To do this, edit the collections in the config file, create a corresponding folder, and update the portfolio and poetry source files. </p>
+</blockquote>
+
+<p>Three different layouts are included—the poetry layout, for a simple list of entries, the blog layout (index.html), for more detailed descriptive list of entries, and the portfolio layout. The portfolio layout overlays a descriptive hoverover on a background image. If no image is provided, the square is auto-filled with the chosen theme color. Thumbnail sizing is not necessary, as the grid crops images perfectly. </p>
+
+<h3>
+<a id="portfolio-specifics" class="anchor" href="#portfolio-specifics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Portfolio Specifics</h3>
+
+<p>You can easily add full pages for each of the projects in your portfolio. If you want one to link to an external website, create a file for it in _portfolio, and  fil in the YAML front matter as you would for another, but with a redirect, like so: </p>
+
+<pre><code>---
+layout: post
+title: Project
+description: a project that redirects to another website
+img:
+redirect: https://otherpage.com
+--- 
+</code></pre>
+
+<h3>
+<a id="theming" class="anchor" href="#theming" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Theming</h3>
+
+<p>Six beautiful theme colors have been selected to choose from. The default is red, but quickly change it by editing the _base.scss file in line 40. The color variable are listed there, as well. </p>
+
+<h3>
+<a id="photos" class="anchor" href="#photos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Photos</h3>
+
+<p>Photo formatting is made simple using rows of a 3-column system. Make photos 1/3, 2/3, or full width. Easily create beautiful grids within your blog posts and projects pages. </p>
+
+<h3>
+<a id="code-highlighting" class="anchor" href="#code-highlighting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Highlighting</h3>
+
+<p>This theme implements Jekyll's built in code syntax highlighting with Pygments. Just use a liquid tag to delineate your code: 
+{% highlight python %}
+    code code code
+{% endhighlight %}</p>
+
+<hr>
+
+<p>The MIT License (MIT)
+Copyright (c) 2015 Lia Bogoev</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
